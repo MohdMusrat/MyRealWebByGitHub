@@ -1,0 +1,357 @@
+/* STYLE FOR THE NAB BAR, SIDE BAR AND CONTENT INSIDE THE SIDE BAR*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    border: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 5px;
+    z-index: 1111;
+    width: 100vw;
+    background-color: #b395f7e8;
+    color: white;
+    padding: 10px 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 0px 10px #4a0adce8;
+    margin-top
+}
+
+#input {
+    width: 12rem;
+    height: 20px;
+    border: none;
+    border-radius: 0px;
+}
+
+#inputDiv {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#inputDiv select {
+    width: 20px;
+    height: 22px;
+    background-color: #ff8e07f8;
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+select:focus {
+    outline: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    z-index: 11111;
+    width: 200px;
+    height: 100vh;
+    background-color: #20002e;
+    color: red;
+    padding: 10px;
+    transition: left 0.3s ease;
+
+}
+
+.sidebar ul {
+    margin-top: 50px;
+}
+
+.sidebar ul li {
+    margin-top: 15px;
+}
+
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.sidebar ul li a:hover {
+    color: gray;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.open-btn,
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#darkMode {
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    transition: all 0.6s ease;
+    top: 20px;
+    left: 5px;
+
+}
+
+
+#darkMode #button {
+    width: 20px;
+    height: 20px;
+    background-color: #b973ffb1;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    transition: all 0.6s ease;
+
+}
+
+#darkMode #textOfMode {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    font-weight: bold;
+    color: white;
+    top: -20px;
+    transform: rotateX(90deg);
+    transition: all 2s ease;
+}
+
+
+
+#overlayOfDark {
+    width: 60px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: transparent;
+    position: absolute;
+    top: 26px;
+    left: 13px;
+    transition: all 0.6s ease;
+    display: none;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-shadow: 0px 0px 30px #00d7bfe8;
+    display: inline-block;
+    color: cyan;
+
+}
+
+/*END OF TYE STYOE FOR NAB BAR, SIDE BAR*/
+
+/* STYLE FOR MAIN PART OF THE PAGE */
+#main {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#main h1 {
+    color: #4b0000;
+    text-shadow: 0px 2px 2px #777;
+}
+
+#main1 {
+    padding: 10px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+
+.profileBox {
+    height: 85px;
+    width: 83px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+    font-family: Monospace;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.60s ease;
+    filter: saturate(40%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.profileBox:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 84vw;
+    height: 30vh;
+    filter: saturate(100%);
+    background-color: #abffddd9;
+    border: none;
+    /*  writing-mode: horizontal-rl;
+    text-orientation: mixed;*/
+
+}
+
+.profileImage {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/profileBoxImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 5px gray;
+    transition: all 1s ease;
+
+}
+.profileImage:hover {
+    transform: rotatex(360deg);
+    width: 84vw;
+    box-shadow: none;
+}
+.profileBox p {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* OTHER STYLE */
+#social {
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    margin: 15px;
+
+}
+
+
+#social h3 {
+    padding: 10px;
+    font-family: Monospace;
+    font-size: 1.2rem;
+}
+#social div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-top: 1px solid black;
+}
+
+#social #instagram {
+    background-color: #e20bffe6;
+}
+#social #youTube {
+    background-color: #cb3b7cd1;
+}
+#social #linkedin {
+    background-color: #1dff3fe6;
+}
+
+#social div a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #007fff;
+    width: 27vw;
+    height: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#social div a:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Footer part*/
+#stem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#switch {
+    height: 200px;
+    width: 50px;
+    border: 1px solid black;
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#switch #btn {
+    width: 30px;
+    height: 160px;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#switch #btn #off {
+    position: absolute;
+    top: 0px;
+}
+
+#switch #btn #on {
+    position: absolute;
+    bottom: -0px;
+}
+
+#branch {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 40px;
+    background-color: #5fffd5f2;
+
+}
+
+#fruit {
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#fruit:hover {
+    background-color: yellow;
+    box-shadow: 0px 0px 40px orange;
+}
